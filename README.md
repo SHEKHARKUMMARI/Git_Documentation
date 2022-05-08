@@ -1,14 +1,62 @@
 # Git_Documentation
 # Table of Contents
-1. Git basic commands
-2. Rebasing
-3. Merge Conflicts
-4. Stashing
+1. Git installation and why git? 
+2. Git basic commands
+3. Rebasing
+4. Merge Conflicts
+5. Stashing
 
-
-# 1.Git basic commands
+# 1.Git installation and why git? 
 
 #### Git is a widely used modern version control system for tracking changes in computer files. The term version control system suggests a system that records all the changes made to a file or set of data, so a specific version can be considered whenever needed. This feature makes the process of collaboration so feasible with all team members, making it considerably more comfortable to work over a big project.
+
+There are several ways to install Git on a Mac. In fact, if you've installed XCode (or it's Command Line Tools), Git may already be installed. To find out, open a terminal and enter git --version. 
+
+$ git --version 
+git version 2.32.0 (Apple Git-132)
+
+Git for Mac Installer 
+
+The easiest way to install Git on a Mac is via the stand-alone installer: 
+Download the latest Git for Mac installer.
+Follow the prompts to install Git.
+Open a terminal and verify the installation was successful by typing git --version:
+$ git --version
+
+Configure your Git username and email using the following commands. These details will be associated with any commits that you create:
+$ git config --global user.name "UserName"
+$ git config --global user.email "UserEmail"
+
+Install Git with Homebrew
+
+If you have installed Homebrew to manage packages on OS X, you can follow these instructions to install Git: 
+Open your terminal and install Git using Homebrew:
+	$ brew install git
+Verify the installation was successful by typing which git --version:
+$ git --version
+Configure your Git username and email using the following commands. These details will be associated with any commits that you create:
+$ git config --global user.name "UserName"
+$ git config --global user.email "UserEmail"
+
+Install Git with MacPorts
+
+If you have installed MacPorts to manage packages on OS X, you can follow these instructions to install Git:
+
+Open your terminal and update MacPorts:
+$ sudo port selfupdate
+Search for the latest available Git ports and variants:
+$ port search git 
+$ port variants git
+Install Git with bash completion, the OS X keychain helper, and the docs:
+
+          $ sudo port install git +bash_completion+credential_osxkeychain+doc
+
+Configure your Git username and email using the following commands. These details will be associated with any commits that you create:
+$ git config --global user.name "UserName"
+$ git config --global user.email "UserEmail"
+
+
+# 2.Git basic commands
 
         1. $ git init
                 The command git init is used to create an empty Git repository.
@@ -90,7 +138,7 @@
                         git push -u origin master
 
 
-# 2. Rebasing
+# 3. Rebasing
     
 #### rebasing is changing the base of your branch from one commit to another making it appear as if you'd created your branch from a different commit
      $ git rebase < base branch name>            :
@@ -116,7 +164,7 @@
                Abort the rebase operation but HEAD is not reset back to the original branch. The index and working tree are also left unchanged as a result. If a temporary stash entry was created using --autostash, it will be saved to the stash list.
                
 
-# 3. Merge Conflicts
+# 4. Merge Conflicts
 
 #### a merge conflict is an event that takes place when Git is unable to automatically resolve differences in code between two commits. Git can merge the changes automatically only if the commits are on different lines or branches.
 
@@ -145,7 +193,7 @@
 Refrence : [resolving merge conflicts](https://www.simplilearn.com/tutorials/git-tutorial/merge-conflicts-in-git#what_is_a_git_merge_conflict)                
 
 
-# 4. Stashing
+# 5. Stashing
 #### Git Stashing is When you stash changes, the changes are temporarily removed from the files and you can choose to restore or discard the changes later
 
         1. $ git stash :
