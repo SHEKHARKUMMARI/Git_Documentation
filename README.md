@@ -13,7 +13,7 @@
 # Git Installation
         There are several ways to install Git on a Mac. In fact, if you've installed XCode (or it's Command Line Tools), Git may already be installed. To find out, open a terminal and enter git --version. 
 
-                1. $ git --version 
+                $ git --version 
                 git version 2.32.0 (Apple Git-132)
 
 ### Git for Mac Installer 
