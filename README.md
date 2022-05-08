@@ -5,12 +5,12 @@
 
 # 1. Rebasing
     
-### rebasing is changing the base of your branch from one commit to another making it appear as if you'd created your branch from a different commit
+#### rebasing is changing the base of your branch from one commit to another making it appear as if you'd created your branch from a different commit
      $ git rebase < base branch name>            :
                This command is used to rebase your feature-branch with base-branch
      $ git rebase --onto main featureA featureB   :
                featureA is the < oldbase >. main becomes the < newbase > and featureB is reference for what HEAD of the < newbase > will point to. 
-#### resolving rebase conflicts :
+### resolving rebase conflicts :
       1. $ git diff :  
               use git diff to locate the markers (<<<<<<) and make edits to resolve the conflict.
       2. $ git add <filename>   :
