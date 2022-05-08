@@ -19,12 +19,12 @@ There are several ways to install Git on a Mac. In fact, if you've installed XCo
 ### Git for Mac Installer 
 
 The easiest way to install Git on a Mac is via the stand-alone installer: 
-   1.Download the latest Git for Mac installer.
-   2.Follow the prompts to install Git.
-   3.Open a terminal and verify the installation was successful by typing  git --version:
+    1. Download the latest Git for Mac installer.
+    2. Follow the prompts to install Git.
+    3. Open a terminal and verify the installation was successful by typing  git --version:
         $ git --version
 
-   4.Configure your Git username and email using the following commands.These details will be associated with any commits that you create:
+    4. Configure your Git username and email using the following commands.These details will be associated with any commits that you create:
         $ git config --global user.name "UserName"
         $ git config --global user.email "UserEmail"
 
