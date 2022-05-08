@@ -142,3 +142,46 @@
                 the git reset command is used at the time of merge conflict to reset the conflicted files to their original state
                 
 Refrence : [resolving merge conflicts](https://www.simplilearn.com/tutorials/git-tutorial/merge-conflicts-in-git#what_is_a_git_merge_conflict)                
+
+
+# 4. Stashing
+#### Git Stashing is When you stash changes, the changes are temporarily removed from the files and you can choose to restore or discard the changes later
+
+        1. $ git stash :
+                you want to switch branches, but you don’t want to commit what you’ve been working on yet, so you’ll stash the changes. To push a new stash onto your stack we can use git stash push 
+
+
+
+        2. $ git stash list :
+                you can switch branches and do work elsewhere; your changes are stored on your stack. To see which stashes you’ve stored
+
+
+
+
+        3. $ git stash apply :
+                In this case, two stashes were saved previously, so you have access to three different stashed works. You can reapply the one you just stashed by using the command shown in the help output of the original stash command: git stash apply. If you want to apply one of the older stashes, you can specify it by naming it, like this:**git stash apply stash@{index}**. If you don’t specify a stash,  Git assumes the most recent stash and tries to apply it:
+        
+
+        4.git stash drop stash@{0} :
+                The apply option only tries to apply the stashed work — you continue to have it on your stack. To remove it, you can run git stash drop with the name of the stash to remove:
+
+
+        5.$ git stash apply --index :
+                The changes to your files were reapplied, but the file you staged before wasn’t restaged. To do that, you must run the git stash apply command with a --index option to tell the command to try to reapply the staged changes. If you had run that instead, you’d have gotten back to your original position:
+        
+
+        6.$ git stash branch testchanges :
+                If you stash some work, leave it there for a while, and continue on the branch from which you stashed the work, you may have a problem reapplying the work. If the apply tries to modify a file that you’ve since modified, you’ll get a merge conflict and will have to try to resolve it. If you want an easier way to test the stashed changes again, you can run git stash branch <new branchname>, which creates a new branch for you with your selected branch name, checks out the commit you were on when you stashed your work, reapplies your work there, and then drops the stash if it applies successfully:
+        
+
+
+        7.git stash --all :
+                You’ll want to be pretty careful with this command, since it’s designed to remove files from your working directory that are not tracked. If you change your mind, there is often no retrieving the content of those files. A safer option is to run git stash --all to remove everything but save it in a stash.
+
+
+
+
+
+
+
+        
