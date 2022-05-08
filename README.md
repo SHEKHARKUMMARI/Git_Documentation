@@ -55,3 +55,5 @@
         
        6. $ git reset :
                 the git reset command is used at the time of merge conflict to reset the conflicted files to their original state
+                
+Refrence : [resolving merge conflicts](https://www.simplilearn.com/tutorials/git-tutorial/merge-conflicts-in-git#what_is_a_git_merge_conflict)                
