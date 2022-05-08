@@ -41,7 +41,7 @@
                 $ git config --global user.name "UserName"
                 $ git config --global user.email "UserEmail"
 
-        ### Install Git with MacPorts
+### Install Git with MacPorts
 
         If you have installed MacPorts to manage packages on OS X, you can follow these instructions to install Git:
 
