@@ -1,7 +1,7 @@
 # Git_Documentation
 # Table of Contents
-1.Rebasing
-2.Merge Conflicts
+1. Rebasing
+2. Merge Conflicts
 
 
 # 1. Rebasing
