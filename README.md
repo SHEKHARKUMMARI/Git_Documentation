@@ -3,6 +3,7 @@
 1. Git basic commands
 2. Rebasing
 3. Merge Conflicts
+4. Stashing
 
 
 # 1.Git basic commands
