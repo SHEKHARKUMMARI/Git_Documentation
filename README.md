@@ -10,50 +10,51 @@
 
 #### Git is a widely used modern version control system for tracking changes in computer files. The term version control system suggests a system that records all the changes made to a file or set of data, so a specific version can be considered whenever needed. This feature makes the process of collaboration so feasible with all team members, making it considerably more comfortable to work over a big project.
 
+# Git Installation
 There are several ways to install Git on a Mac. In fact, if you've installed XCode (or it's Command Line Tools), Git may already be installed. To find out, open a terminal and enter git --version. 
 
-$ git --version 
-git version 2.32.0 (Apple Git-132)
+        1. $ git --version 
+           git version 2.32.0 (Apple Git-132)
 
-Git for Mac Installer 
+### Git for Mac Installer 
 
 The easiest way to install Git on a Mac is via the stand-alone installer: 
-Download the latest Git for Mac installer.
-Follow the prompts to install Git.
-Open a terminal and verify the installation was successful by typing git --version:
-$ git --version
+   1.Download the latest Git for Mac installer.
+   2.Follow the prompts to install Git.
+   3.Open a terminal and verify the installation was successful by typing  git --version:
+        $ git --version
 
-Configure your Git username and email using the following commands. These details will be associated with any commits that you create:
-$ git config --global user.name "UserName"
-$ git config --global user.email "UserEmail"
+   4.Configure your Git username and email using the following commands.These details will be associated with any commits that you create:
+        $ git config --global user.name "UserName"
+        $ git config --global user.email "UserEmail"
 
-Install Git with Homebrew
+### Install Git with Homebrew
 
 If you have installed Homebrew to manage packages on OS X, you can follow these instructions to install Git: 
-Open your terminal and install Git using Homebrew:
+   1.Open your terminal and install Git using Homebrew:
 	$ brew install git
-Verify the installation was successful by typing which git --version:
-$ git --version
-Configure your Git username and email using the following commands. These details will be associated with any commits that you create:
-$ git config --global user.name "UserName"
-$ git config --global user.email "UserEmail"
+   2.Verify the installation was successful by typing which git --version:
+        $ git --version
+   3.Configure your Git username and email using the following commands. These details will be associated with any commits that you create:
+        $ git config --global user.name "UserName"
+        $ git config --global user.email "UserEmail"
 
-Install Git with MacPorts
+### Install Git with MacPorts
 
 If you have installed MacPorts to manage packages on OS X, you can follow these instructions to install Git:
 
-Open your terminal and update MacPorts:
-$ sudo port selfupdate
-Search for the latest available Git ports and variants:
-$ port search git 
-$ port variants git
-Install Git with bash completion, the OS X keychain helper, and the docs:
+   1.Open your terminal and update MacPorts:
+        $ sudo port selfupdate
+   2.Search for the latest available Git ports and variants:
+        $ port search git 
+        $ port variants git
+   3.Install Git with bash completion, the OS X keychain helper, and the docs:
 
-          $ sudo port install git +bash_completion+credential_osxkeychain+doc
+        $ sudo port install git +bash_completion+credential_osxkeychain+doc
 
-Configure your Git username and email using the following commands. These details will be associated with any commits that you create:
-$ git config --global user.name "UserName"
-$ git config --global user.email "UserEmail"
+   4.Configure your Git username and email using the following commands. These details will be associated with any commits that you create:
+        $ git config --global user.name "UserName"
+        $ git config --global user.email "UserEmail"
 
 
 # 2.Git basic commands
