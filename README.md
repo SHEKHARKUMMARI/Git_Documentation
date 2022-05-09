@@ -7,6 +7,7 @@
 5. Stashing
 6. Adding
 7. Committing
+8. Branching
 
 # 1.Git installation and why git? 
 
@@ -287,3 +288,46 @@ Refrence : [resolving merge conflicts](https://www.simplilearn.com/tutorials/git
 
         4. $ git commit -amend :
                 This command is used to edit the last commit. It will prompt the default text editor and allow us to edit the commit message.
+                
+                
+                
+                
+#8 Branching
+Branching is a feature available in most modern version control systems.Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug you spawn a new branch to encapsulate your changes.
+
+      1. $ git branch :
+                This command lets you see all the branches in your repository
+                
+      2. $ git branch <branch>
+               Create a new branch called ＜branch＞
+               
+      3. $ git branch -d <branch>
+                Delete the branch named <branch>
+                
+      4  $ git branch -D <branch>
+                Force delete the branch even if it has unmerged changes
+                
+      5  $ git branch -m <branch>
+                Rename the current branch
+                
+      6  $ git branch -a
+                List all remote branches
+                
+      #  It's important to understand that branches are just pointers to commits. When you create a branch, all Git needs to do is create a new pointer,            it doesn’t change the repository in any other way.  
+      
+      7  $ git branch my-feature
+                creates a new branch named my-feature
+                
+      8  $ $ git remote add new-remote-repo https://xyz.com/user/repo.git
+                Add remote repo to local repo config
+                
+      9  $ git push <new-remote-repo> my-feature~
+                pushes the my-feature branch to new-remote-repo 
+                
+      10 $ git push origin --delete my-feature
+                This will push a delete signal to the remote origin repository that triggers a delete of the remote my-feature branch.
+
+
+                 
+       
+                
