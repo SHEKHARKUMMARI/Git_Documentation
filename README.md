@@ -5,6 +5,8 @@
 3. Rebasing
 4. Merge Conflicts
 5. Stashing
+6. Adding
+7. Committing
 
 # 1.Git installation and why git? 
 
