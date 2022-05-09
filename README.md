@@ -177,6 +177,27 @@
 
 ![Merge Conflict](https://www.simplilearn.com/ice9/free_resources_article_thumb/pull-push.JPG)
 
+### Types of merge conflicts
+A merge can enter a conflicted state at two separate points. When starting and during a merge process. The following is a discussion of how to address each of these conflict scenarios.
+
+#### Git fails to start the merge
+A merge will fail to start when Git sees there are changes in either the working directory or staging area of the current project. Git fails to start the merge because these pending changes could be written over by the commits that are being merged in. When this happens, it is not because of conflicts with other developer's, but conflicts with pending local changes. The local state will need to be stabilized using git stash, git checkout, git commit or git reset.
+
+#### Git fails during the merge
+A failure DURING a merge indicates a conflict between the current local branch and the branch being merged. This indicates a conflict with another developers code. Git will do its best to merge the files but will leave things for you to resolve manually in the conflicted files.
+
+### How to identify merge conflicts
+As we have experienced from the proceeding example, Git will produce some descriptive output letting us know that a CONFLICT has occcured. We can gain further insight by running the **git status** command. The output from git status indicates that there are unmerged paths due to a conflict.
+
+### How to Resolve Merge Conflicts in Git?
+There are a few steps that could reduce the steps needed to resolve merge conflicts in Git.
+
+The easiest way to resolve a conflicted file is to open it and make any necessary changes
+After editing the file, we can use the git add a command to stage the new merged content
+The final step is to create a new commit with the help of the git commit command
+Git will create a new merge commit to finalize the merge
+Let us now look into the Git commands that may play a significant role in resolving conflicts.
+
 ### git commands to resolve conflicts
 #### General Tools
 
@@ -203,7 +224,7 @@
                 the git reset command is used at the time of merge conflict to reset the conflicted files to their original state
                 
 Refrence : [resolving merge conflicts](https://www.simplilearn.com/tutorials/git-tutorial/merge-conflicts-in-git#what_is_a_git_merge_conflict)                
-
+Checkout the reference link for a demo.
 
 # 5. Stashing
 #### Git Stashing is When you stash changes, the changes are temporarily removed from the files and you can choose to restore or discard the changes later
