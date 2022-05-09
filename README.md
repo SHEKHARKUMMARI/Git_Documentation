@@ -8,6 +8,7 @@
 6. Adding
 7. Committing
 8. Branching
+9. Commiting
 
 # 1.Git installation and why git? 
 
@@ -333,6 +334,42 @@ Refrence : [resolving merge conflicts](https://www.simplilearn.com/tutorials/git
                 This will push a delete signal to the remote origin repository that triggers a delete of the remote my-feature branch.
 
 
-                 
-       
-                
+# 7. Commiting
+### The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.git merge is often used in conjunction with git checkout for selecting the current branch and git branch -d for deleting the obsolete target branch.
+
+Steps before merging 
+1.Execute git status to ensure that HEAD is pointing to the correct merge-receiving branch. If needed, execute git checkout to switch to the receiving branch. In our case we will execute git checkout main
+2.Make sure the receiving branch and the merging branch are up-to-date with the latest remote changes. Execute git fetch to pull the latest remote commits. Once the fetch is completed ensure the main branch has the latest updates by executing git pull.
+
+      1 Common workflow
+        Start a new feature
+        $ git checkout -b new-feature main
+        Edit some files
+        $ git add <file>
+        $ git commit -m "Start a feature"
+        Edit some files 
+        $ git add <file>
+        $ git commit -m "Finish a feature"
+        # Merge in the new-feature branch
+        $ git checkout main
+        $ git merge new-feature
+        $ git branch -d new-feature
+      2 $ git merge --no-ff <branch>
+                This command merges the specified branch into the current branch, but always generates a merge commit (even if it was a fast-forward                       merge, A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch.). This is useful for                   documenting all merges that occur in your repository.
+      3 Common scenario while adding new feature
+          Start a new feature
+                $ git checkout -b new-feature main
+                # Edit some files
+                $ git add <file>
+                $ git commit -m "Start a feature"
+                # Edit some files
+                $ git add <file>
+                $ git commit -m "Finish a feature"
+                # Develop the main branch
+                $ git checkout main
+                # Edit some files
+                $ git add <file>
+                $ git commit -m "Make some super-stable changes to main"
+                # Merge in the new-feature branch
+                $ git merge new-feature
+                $ git branch -d new-feature
