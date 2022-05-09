@@ -8,7 +8,7 @@
 6. Adding
 7. Committing
 8. Branching
-9. Commiting
+9. Merging
 
 # 1.Git installation and why git? 
 
@@ -298,7 +298,7 @@ Refrence : [resolving merge conflicts](https://www.simplilearn.com/tutorials/git
                 
                 
                 
-# 7. Branching
+# 8. Branching
 ### Branching is a feature available in most modern version control systems.Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug you spawn a new branch to encapsulate your changes.
 
       1. $ git branch :
@@ -334,7 +334,7 @@ Refrence : [resolving merge conflicts](https://www.simplilearn.com/tutorials/git
                 This will push a delete signal to the remote origin repository that triggers a delete of the remote my-feature branch.
 
 
-# 7. Commiting
+# 9. Merging
 ### The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.git merge is often used in conjunction with git checkout for selecting the current branch and git branch -d for deleting the obsolete target branch.
 
 Steps before merging 
