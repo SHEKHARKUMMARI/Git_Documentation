@@ -187,7 +187,7 @@ A merge will fail to start when Git sees there are changes in either the working
 A failure DURING a merge indicates a conflict between the current local branch and the branch being merged. This indicates a conflict with another developers code. Git will do its best to merge the files but will leave things for you to resolve manually in the conflicted files.
 
 ### How to identify merge conflicts
-As we have experienced from the proceeding example, Git will produce some descriptive output letting us know that a CONFLICT has occcured. We can gain further insight by running the **git status** command. The output from git status indicates that there are unmerged paths due to a conflict.
+Git will produce some descriptive output letting us know that a CONFLICT has occcured. We can gain further insight by running the **git status** command. The output from git status indicates that there are unmerged paths due to a conflict.
 
 ### How to Resolve Merge Conflicts in Git?
 There are a few steps that could reduce the steps needed to resolve merge conflicts in Git.
