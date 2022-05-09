@@ -232,8 +232,56 @@ Refrence : [resolving merge conflicts](https://www.simplilearn.com/tutorials/git
 
 
 
+# 6. Adding
+### This command adds new or changed files in your working directory to the Git staging area.
+
+        1. $ git add <File name> :
+                This command adds the file to the git staging area, but yet it cannot be shared on version control system.
 
 
 
+        2. $ git add -A (or) git add . :
+                This command adds all the available files in the repository to the staging area.
+
+
+
+        3. $ git add --ignore-removal :
+                This command allows to stage only updated and newly created files at once.
+
+
+
+        4. $ git add -u  :
+                This command allows to stage only the modified and deleted files.
+
+
+
+        5. $ git add *.go :
+                This command allows to add all the same pattern files (all go files) at once. It is another way to add multiple files together.
+
+
+
+        6. $ git reset <filename> :
+                This command used to undo an add operation.
+
+
+
+# 7. Committing
+### This command is used to record the changes in the repository. Every commit contains the index data and the commit message. Every commit forms a parent-child relationship. A commit command is used to fetch updates from the staging area to the repository.
+
+        1. $ git commit :
+                This command will commit the changes and generate a commit-id. The commit command without any argument will open the default text editor and ask for the commit message.
+
+
+
+        2. $ git commit -a :
+                This command is used to commit the snapshots of all changes. It only consider already added files in Git. It will not commit the newly created files.
 
         
+
+        3. $ git commit -m "Commit Message" :
+                This command is used to write commit message on the command line.
+
+
+
+        4. $ git commit -amend :
+                This command is used to edit the last commit. It will prompt the default text editor and allow us to edit the commit message.
