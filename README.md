@@ -172,23 +172,28 @@
 
 # 4. Merge Conflicts
 
-#### a merge conflict is an event that takes place when Git is unable to automatically resolve differences in code between two commits. Git can merge the changes automatically only if the commits are on different lines or branches.
+#### A merge conflict is an event that takes place when Git is unable to automatically resolve differences in code between two commits. Git can merge the changes automatically only if the commits are on different lines or branches.
 
 ![Merge Conflict](https://www.simplilearn.com/ice9/free_resources_article_thumb/pull-push.JPG)
 
 ### git commands to resolve conflicts
+####General Tools
 
        1. $ git log --merge :
                 the git log --merge command helps to produce the list of commits that are causing the conflict
        
        2. $ git diff :
                 the git diff command helps to identify the differences between the states repositories or files
+       
+#### Tools for when git fails to start a merge
         
        3. $ git checkout :
                 the git checkout command is used to undo the changes made to the file, or for changing branches
                 
        4. $ git reset --mixed :
                 the git reset --mixed command is used to undo changes to the working directory and staging area
+               
+#### Tools for when git conflicts arise during a merge
        
        5. $ git merge --abort :
                 the git merge --abort command helps in exiting the merge process and returning back to the state before the merging began
