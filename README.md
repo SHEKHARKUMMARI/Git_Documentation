@@ -177,7 +177,7 @@
 ![Merge Conflict](https://www.simplilearn.com/ice9/free_resources_article_thumb/pull-push.JPG)
 
 ### git commands to resolve conflicts
-####General Tools
+#### General Tools
 
        1. $ git log --merge :
                 the git log --merge command helps to produce the list of commits that are causing the conflict
