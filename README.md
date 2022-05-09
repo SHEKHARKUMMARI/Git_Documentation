@@ -292,8 +292,8 @@ Refrence : [resolving merge conflicts](https://www.simplilearn.com/tutorials/git
                 
                 
                 
-#8 Branching
-Branching is a feature available in most modern version control systems.Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug you spawn a new branch to encapsulate your changes.
+# 7. Branching
+### Branching is a feature available in most modern version control systems.Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug you spawn a new branch to encapsulate your changes.
 
       1. $ git branch :
                 This command lets you see all the branches in your repository
