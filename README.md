@@ -419,19 +419,11 @@ Steps before merging
         $ git checkout -b feature-name:
         His checks out a branch called new-feature based on main, and the -b flag tells Git to create the branch if it doesn’t already exist.
 
-
-
-
-
         2.Update, add, commit, and push changes:On this branch, edit, stage, and commit changes in the usual fashion, building up the feature with as many commits as necessary. Work on the feature and make commits like you would any time you use Git. When ready, push your commits, updating the feature branch
 
         $ git status
         $ git add <some-file>
         $ git commit
-
-
-
-
 
         3.Push feature branch to remote:It’s a good idea to push the feature branch up to the central repository. This serves as a convenient backup, when collaborating with other developers, this would give them access to view commits to the new branch.
 
