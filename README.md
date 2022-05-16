@@ -9,6 +9,9 @@
 7. Committing
 8. Branching
 9. Merging
+10. Feature Branch
+
+
 
 # 1.Git installation and why git? 
 
@@ -405,3 +408,39 @@ Steps before merging
                 # Merge in the new-feature branch
                 $ git merge new-feature
                 $ git branch -d new-feature
+
+
+# 10. Feature Branch
+
+### The Feature Branch Workflow is that all feature development should take place in a dedicated branch instead of the main branch. This encapsulation makes it easy for multiple developers to work on a particular feature without disturbing the main codebase .It also means the main branch will never contain broken code which is a huge advantage for continuous integration environments.
+
+        1.Create a new-branch:Use a separate branch for each feature or issue you work on. After creating a branch, check it out locally so that any changes you make will be on that branch.
+
+        $ git checkout -b feature-name:
+        His checks out a branch called new-feature based on main, and the -b flag tells Git to create the branch if it doesn’t already exist.
+
+
+
+
+
+        2.Update, add, commit, and push changes:On this branch, edit, stage, and commit changes in the usual fashion, building up the feature with as many commits as necessary. Work on the feature and make commits like you would any time you use Git. When ready, push your commits, updating the feature branch
+
+        $ git status
+        $ git add <some-file>
+        $ git commit
+
+
+
+
+
+        3.Push feature branch to remote:It’s a good idea to push the feature branch up to the central repository. This serves as a convenient backup, when collaborating with other developers, this would give them access to view commits to the new branch.
+
+        $ git push -u origin new-feature:
+        This command pushes new-feature to the central repository (origin), and the -u flag adds it as a remote tracking branch. After setting up the tracking branch, git push can be invoked without any parameters to automatically push the new-feature branch to the central repository.
+
+
+
+
+
+
+
