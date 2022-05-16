@@ -435,7 +435,7 @@ Steps before merging
 
         3.Push feature branch to remote:It’s a good idea to push the feature branch up to the central repository. This serves as a convenient backup, when collaborating with other developers, this would give them access to view commits to the new branch.
 
-        $ git push -u origin new-feature:
+        $ git push -u origin feature-name:
         This command pushes new-feature to the central repository (origin), and the -u flag adds it as a remote tracking branch. After setting up the tracking branch, git push can be invoked without any parameters to automatically push the new-feature branch to the central repository.
 
 
